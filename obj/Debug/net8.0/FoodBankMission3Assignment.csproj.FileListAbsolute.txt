@@ -1,0 +1,14 @@
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/bin/Debug/net8.0/FoodBankMission3Assignment
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/bin/Debug/net8.0/FoodBankMission3Assignment.deps.json
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/bin/Debug/net8.0/FoodBankMission3Assignment.runtimeconfig.json
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/bin/Debug/net8.0/FoodBankMission3Assignment.dll
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/bin/Debug/net8.0/FoodBankMission3Assignment.pdb
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.GeneratedMSBuildEditorConfig.editorconfig
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.AssemblyInfoInputs.cache
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.AssemblyInfo.cs
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.csproj.CoreCompileInputs.cache
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.dll
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/refint/FoodBankMission3Assignment.dll
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.pdb
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/FoodBankMission3Assignment.genruntimeconfig.cache
+/Users/bradenstevens/RiderProjects/FoodBankMission3Assignment/obj/Debug/net8.0/ref/FoodBankMission3Assignment.dll
