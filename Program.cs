@@ -11,9 +11,9 @@ internal class Program
     {
         List<FoodItem> foodList = new List<FoodItem>
         {
-            new FoodItem("Apple", "Fruit", 10, DateTime.Today),
-            new FoodItem("Carrot", "Vegetable", 5, DateTime.Today),
-            new FoodItem("Banana", "Fruit", 7, DateTime.Today)
+            // new FoodItem("Apple", "Fruit", 10, DateTime.Today),
+            // new FoodItem("Carrot", "Vegetable", 5, DateTime.Today),
+            // new FoodItem("Banana", "Fruit", 7, DateTime.Today)
         };
         
         
@@ -21,8 +21,10 @@ internal class Program
         // Initalize the exit variable that keeps track of if the user has requested an exit
         bool exit = false;
 
+        // Create the while loop to repeat the menu
         while (!exit)
         {
+            // Print out the menu
             Console.Clear();
             Console.WriteLine(
                 "\n========== Menu ==========" + 
@@ -32,9 +34,12 @@ internal class Program
                 "\n   To see a list of all food items type \"list\"" +
                 "\n   To exit type \"exit\""
                 + "\n\n==========================");
+            
+            // Gather the users choice
             Console.Write("Enter your choice: ");
             string whatToDo = Console.ReadLine().ToLower();
 
+            // Determine what to do based off the response
             if (whatToDo == "add")
             {
                 Console.Write("Enter food item name: ");
@@ -43,6 +48,7 @@ internal class Program
                 // Check if the item already exists in the list
                 if (foodList.Any(item => item.itemName.Equals(itemName, StringComparison.OrdinalIgnoreCase)))
                 {
+                    // Error handling so that multiple items of the same name can't be entered
                     Console.WriteLine("This item already exists in the food list. Cannot add duplicates.");
                     Console.WriteLine("\nPress any key to continue...");
                     Console.ReadKey();
@@ -53,6 +59,8 @@ internal class Program
                     string itemCategory = Console.ReadLine();
 
                     Console.Write("Enter food item quantity: ");
+                    
+                    // Error handling if the user inputs a negative number
                     if (int.TryParse(Console.ReadLine(), out int itemQuantity) && itemQuantity >= 0)
                     {
                         Console.Write("Enter food item expiration date (MM/dd/yyyy): ");
@@ -95,14 +103,17 @@ internal class Program
             }
             else
             {
+                // Error handling for the user entering a valid option
                 Console.WriteLine("Invalid choice. Please try again.");
             }
         }
+        // Define add food item logic
         void AddFoodItem(FoodItem item)
         {
             foodList.Add(item);
         }
 
+        // Define delete food item logic
         void DeleteFoodItem(string itemNameToFind)
         {
             itemNameToFind = itemNameToFind.ToLower();
@@ -117,7 +128,8 @@ internal class Program
                 Console.WriteLine("Item not found!");
             }
         }
-
+        
+        // Define list food item logic
         void ListFoodItems()
         {
             Console.WriteLine("\nFood Items:");
@@ -128,8 +140,6 @@ internal class Program
             Console.WriteLine("\nPress any key to continue...");
             Console.ReadKey();
         }
-        
-        
         
     }
 }
