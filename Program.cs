@@ -133,6 +133,7 @@ internal class Program
         void ListFoodItems()
         {
             Console.WriteLine("\nFood Items:");
+            // Write out the information for each item
             foreach (FoodItem item in foodList)
             {
                 Console.WriteLine($"Name: {item.itemName}, Category: {item.category}, Quantity: {item.quantity}, Expiration Date: {item.expirationDate.ToShortDateString()}");
